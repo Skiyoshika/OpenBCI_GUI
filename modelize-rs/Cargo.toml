@@ -1,0 +1,13 @@
+[package]
+name = "modelize-rs"
+version = "0.1.0"
+edition = "2024"
+description = "Rust port of OpenBCI signal pipeline with waveform and spectrum plotting"
+authors = ["OpenAI Assistant"]
+license = "MIT"
+
+[dependencies]
+rustfft = "6.1"
+plotters = { version = "0.3", default-features = false, features = ["bitmap_backend", "bitmap_encoder"] }
+thiserror = "1.0"
+image = { version = "0.25", default-features = false, features = ["png"] }
